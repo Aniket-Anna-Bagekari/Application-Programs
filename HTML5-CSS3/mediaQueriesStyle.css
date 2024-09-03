@@ -1,0 +1,42 @@
+h1 {
+    background-color:aqua;
+    border:2px solid black;
+}
+
+@media(width:400px) {
+    h1 {
+        background-color:brown;
+        color:white;
+    }
+
+    div {
+        height:100px;
+        width:100px;
+        background-color:blueviolet;
+    }
+}
+
+@media(min-width:500px) {
+    h1 {
+        background-color:green;
+    }
+}
+
+@media(max-width:200px) {
+    h1 {
+        background-color:pink;
+    }
+}
+
+@media(min-width:200px) and (max-width:300px) {
+    h1 {
+        background-color:magenta;
+    }
+}
+
+@media(orientation:landscape) {
+    h1 {
+        background-color:green;
+        color:brown;
+    }
+}

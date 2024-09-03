@@ -1,0 +1,51 @@
+.box {
+    height:100px;
+    width:300px;
+    background-color:aqua;
+
+    /* animation-name:fontAnimation,colorAnimation,widthAnimation;
+    animation-duration:2s;
+    animation-timing-function:ease-in;
+    animation-delay:0;
+    animation-iteration-count:3;
+    animation-direction:normal; */
+
+    /* Animation Shorthand */
+    animation: colorAnimation 4s ease-in 0s 3 normal;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size:20px;
+    }
+    to {
+        font-size:40px;
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color:blue;
+    }
+    80% {
+        background-color:red;
+    }
+    100% {
+        background-color: aqua;
+    }
+}
+
+@keyframes widthAnimation {
+    from {
+        width:10px;
+        background-color:black;
+    }
+    to {
+        width:400px;
+        background-color:red;
+        border-radius:20px;
+    }
+}
